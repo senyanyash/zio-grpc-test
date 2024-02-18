@@ -15,8 +15,6 @@ lazy val root = project
     ),
     dockerExposedPorts ++= Seq(443, 443),
     libraryDependencies ++= Seq(
-      "com.google.api.grpc" % "googleapis-common-protos" % "0.0.3" % "protobuf",
-      "com.google.api.grpc" % "googleapis-common-protos" % "0.0.3" % "protobuf-src",
       "io.grpc" % "grpc-netty" % "1.50.1",
       "com.thesamet.scalapb" %% "scalapb-runtime-grpc" % scalapb.compiler.Version.scalapbVersion,
       "com.typesafe" % "config" % "1.4.3",
